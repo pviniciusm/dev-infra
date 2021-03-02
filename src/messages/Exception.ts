@@ -1,13 +1,13 @@
 import Return from './Return';
 
 class Exception extends Return {
-  constructor (message: String, code?: Number, identifier?: String) {
+  constructor (message: string, code?: number, identifier?: string) {
     super(false, code || 500, message, undefined, true, identifier);
   }
 }
 
 class RequiredFieldException extends Exception {
-  constructor (field: String) {
+  constructor (field: string) {
     super(field + ' is required.', 500, 'RequiredFieldException');
   }
 }

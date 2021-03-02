@@ -1,12 +1,12 @@
 class Return {
   public ok: boolean;
-  public message: String;
+  public message: string;
   public data: any;
   public isException: boolean;
-  public code: Number;
-  public identifier: String;
+  public code: number;
+  public identifier: string;
 
-  constructor (ok: boolean, code: Number, message: String, data?: any, isException?: boolean, identifier?: String) {
+  constructor (ok: boolean, code: number, message: string, data?: any, isException?: boolean, identifier?: string) {
     this.data = data || undefined;
     this.message = message;
     this.ok = ok;

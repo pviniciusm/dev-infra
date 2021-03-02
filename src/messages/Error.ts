@@ -1,19 +1,19 @@
 import Return from './Return';
 
 class Error extends Return {
-  constructor (message: String, code?: Number, identifier?: String) {
+  constructor (message: string, code?: number, identifier?: string) {
     super(false, code || 400, message, undefined, false, identifier);
   }
 }
 
 class RequiredFieldError extends Error {
-  constructor (field: String) {
+  constructor (field: string) {
     super(field + ' is required.', 400, 'RequiredField');
   }
 }
 
 class InvalidFieldError extends Error {
-  constructor (field: String, reason?: String) {
+  constructor (field: string, reason?: string) {
     const defaultCode = 402;
     const defaultIdentifier = 'InvalidField';
 
@@ -35,7 +35,7 @@ class IncorrectPassword extends Error {
 }
 
 class InexistentEntryError extends Error {
-  constructor (entry: String, message?: String) {
+  constructor (entry: string, message?: string) {
     const defaultCode = 404;
     const defaultIdentifier = 'InexistentEntry';
 
@@ -48,7 +48,7 @@ class InexistentEntryError extends Error {
 }
 
 class DuplicatedEntryError extends Error {
-  constructor (entry: String, message?: String) {
+  constructor (entry: string, message?: string) {
     const defaultCode = 401;
     const defaultIdentifier = 'InexistentEntry';
 
@@ -61,7 +61,7 @@ class DuplicatedEntryError extends Error {
 }
 
 class RemoveError extends Error {
-  constructor (entry: String, message?: String) {
+  constructor (entry: string, message?: string) {
     const defaultCode = 405;
     const defaultIdentifier = 'RemoveError';
 
@@ -74,7 +74,7 @@ class RemoveError extends Error {
 }
 
 class WrongInformationError extends Error {
-  constructor (entry: String, message?: String) {
+  constructor (entry: string, message?: string) {
     const defaultCode = 402;
     const defaultIdentifier = 'WrongInfo';
 
