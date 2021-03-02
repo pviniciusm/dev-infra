@@ -2,7 +2,7 @@ import Return from './Return';
 
 class Error extends Return {
   constructor (message: string, code?: number, identifier?: string) {
-    super(false, code || 400, message, undefined, false, identifier);
+    super(false, code || 400, message || 'It seems like we are facing an error. Please check your informations and try again on few seconds.', undefined, false, identifier);
   }
 }
 
