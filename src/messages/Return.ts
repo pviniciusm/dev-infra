@@ -12,7 +12,7 @@ class Return {
     this.ok = ok;
     this.code = code;
     this.isException = isException || false;
-    this.identifier = identifier;
+    this.identifier = identifier || 'Return';
   }
 
   get = () => {
