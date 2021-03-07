@@ -9,12 +9,12 @@
     "sourceMap": true,
     "outDir": "./dist",
     "baseUrl": ".",
-    "paths": {
-      "*": ["node_modules/*", "src/types/*"]
-    },
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "strictPropertyInitialization": false,
+    "strict": true,
+    "declaration": true
   },
   "include": ["src/**/*"],
+  "exclude": ["node_modules"]
 }
