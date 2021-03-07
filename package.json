@@ -1,11 +1,12 @@
 {
-  "name": "message-infra",
+  "name": "dev-infra",
   "version": "1.0.0",
-  "description": "Infra for return messages",
-  "main": "index.js",
+  "description": "Infra for node.js projects",
+  "main": "infra.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "ts-node-dev --ignore-watch node_modules src/index.ts"
+    "dev": "ts-node-dev --ignore-watch node_modules src/index.ts",
+    "build": "tsc"
   },
   "repository": {
     "type": "git",
