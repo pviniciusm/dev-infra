@@ -1,13 +1,15 @@
 {
   "name": "dev-infra",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Infra for node.js projects",
-  "main": "main.js",
+  "main": "dist/main.js",
+  "types": "dist/main.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "ts-node-dev --ignore-watch node_modules src/index.ts",
     "build": "tsc"
   },
+  "prepublish": "tsc",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/pviniciusm/message-infra.git"

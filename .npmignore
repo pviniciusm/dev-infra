@@ -1,0 +1,6 @@
+src
+.husky
+
+.eslintrc.*
+.lintstagedrc.*
+tsconfig.json
