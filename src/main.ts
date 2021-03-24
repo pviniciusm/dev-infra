@@ -13,6 +13,6 @@ const Infra = {
 export default Infra;
 
 export {
-  Return, 
+  Return,
   ApiResponse
 };
