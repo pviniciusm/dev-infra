@@ -7,12 +7,12 @@ import ApiResponse from './api/ApiResponse';
 const Infra = {
   Success,
   ...Errors,
-  ...Exceptions,
-  ApiResponse
+  ...Exceptions
 };
 
 export default Infra;
 
 export {
-  Return
+  Return, 
+  ApiResponse
 };
